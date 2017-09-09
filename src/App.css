@@ -11,5 +11,10 @@
 }
 
 .body {
+  background-color: #fff;
+  margin: 60px 0px 15px 0px;
+  font-size: 80px;
+  text-align: center;
+  vertical-align: middle;
   top: 45px;
 }
