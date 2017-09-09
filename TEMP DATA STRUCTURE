@@ -1,0 +1,26 @@
+```
+// blips is a collection of blip
+blips: ["HURRICANE_IRMA", "TRUMP_TOWER_NARUTO_RUN", "INTERN_SEASON_STRIKES_AGAIN"]
+
+// blip is a single source of news
+{{BLIP_NAME}} : {
+  title: {{BLIP_TITLE}},
+  location: {{BLIP_LOCATION}},
+  newsLinks: {
+    {{NEWS_TITLE}}: {{NEWS_URL}}
+  },
+  icon: {{ICON_URL}} (or maybe font icon)
+  trendingRank: {{POPULARITY/SPICINESS_OF_BLIP}}
+}
+
+example:
+TRUMP_TOWER_NARUTO_RUN: {
+  title: "Hundreds of people gather for 'naruto run' at Trump Tower",
+  location: "New York",
+  newsLinks: {
+    foxNews: "foxNews.net",
+    CNN: "fakenews.lol"
+  },
+  icon: "https://images.google.com/naruto-runasdigqiwueyroiuyqwoieyuriouy",
+  trendingRank: 10
+}
