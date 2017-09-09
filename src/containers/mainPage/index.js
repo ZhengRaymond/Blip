@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './index.css';
 
 // import BarChart from './BarChart.js';
@@ -11,20 +10,12 @@ class MainPage extends Component {
     return (
       <div>
         <div className="main">
-          <h>Blip</h>
-          <div className="map">
-            <div style={{display: "none"}}><MapControl /></div>
-            <Map />
-          </div>
+          <h style={{marginTop: "10px", marginBottom: "30px"}}>Blip</h>
+          <Map />
         </div>
       </div>
     );
   }
 }
 
-function mapStateToProps(state) {
-  return {
-  };
-}
-
-export default connect(mapStateToProps)(MainPage);
+export default MainPage;
