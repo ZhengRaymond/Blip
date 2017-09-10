@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import map from 'lodash/map';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import { geoAlbersUsa, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
@@ -46,20 +45,13 @@ class Map extends Component {
           <g> // BLIPS
             {
               map(this.props.blips, (blip, blipName) => (
-                <ReactCSSTransitionGroup
-                  key={blipName}
-                  transitionName="blipAnims"
-                  transitionEnterTimeout={1000}
-                  transitionLeaveTimeout={1000}
-                >
-                  <Blip
-                    blip={blip}
-                    blipName={blipName}
-                    pathGenerator={this.pathGenerator}
-                    onClick={this.props.onClick}
-                    active={blipName === this.props.selectedBlip}
-                  />
-                </ReactCSSTransitionGroup>
+                <Blip
+                  blip={blip}
+                  blipName={blipName}
+                  pathGenerator={this.pathGenerator}
+                  onClick={this.props.onClick}
+                  active={blipName === this.props.selectedBlip}
+                />
               ))
             }
           </g>
