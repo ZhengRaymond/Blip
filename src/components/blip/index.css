@@ -1,7 +1,26 @@
-export default function(state = {}, action) {
-  switch(action.type) {
-  case 'BOOK_SELECTED':
-    return action.payload;
-  }
-  return state;
+
+.blip {
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.blip {
+  opacity: 1.0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.blip-text {
+  opacity: 0.0;
+  transition: all 0.3s;
+}
+
+.blip-text-hover {
+  transition: all 0.3s;
+}
+
+.blip-text-active {
+  opacity: 1.0;
+  transition: all 0.3s;
 }

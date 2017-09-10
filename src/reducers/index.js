@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
-import BlipsReducer from './reducer_blips';
+import mainReducer from './reducer_main';
+// import TweetsReducer from './reducer_tweets';
 
 const rootReducer = combineReducers({
-  blips: BlipsReducer
+  main: mainReducer,
 });
 
 export default rootReducer;

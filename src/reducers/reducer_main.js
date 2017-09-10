@@ -13,14 +13,20 @@
 //   return state;
 // }
 
-import { GET_BLIPS, GET_BLIP } from '../actions/index';
+import { GET_BLIPS, GET_TWEETS } from '../actions/index';
 
 export default function(state = {}, action) {
   switch(action.type) {
     case GET_BLIPS:
-    return { ...state, ["blips"]: action.payload };
-    case GET_BLIP:
-    return { ...state, ["tweets"]: action.payload };
+    return {
+      ...state,
+      ["blips"]: action.payload
+    };
+    case GET_TWEETS:
+    return {
+      ...state,
+      ["tweets"]: action.payload
+    };
   }
   return state;
 }
