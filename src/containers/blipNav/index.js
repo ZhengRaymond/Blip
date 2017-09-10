@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { Link } from 'react-router-dom'
 
-import { Affix, Button, Menu } from 'antd';
+import { Affix, Menu } from 'antd';
 const MenuItem = Menu.Item;
-const ButtonGroup = Button.Group;
 
 class BlipNav extends Component {
   constructor(props) {
@@ -33,13 +32,13 @@ class BlipNav extends Component {
           }}
         >
           <MenuItem key="home">
-            Navigation One
+            <Link to='/home'>Home</Link>
           </MenuItem>
           <MenuItem key="about">
-            Navigation Two
+            <Link to='/about'>About</Link>
           </MenuItem>
-          <MenuItem key="github">
-            Navigation Three
+          <MenuItem key="source">
+            <Link to='/source'>Source</Link>
           </MenuItem>
         </Menu>
       </Affix>
@@ -47,9 +46,4 @@ class BlipNav extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-  };
-}
-
-export default connect(mapStateToProps)(BlipNav);
+export default BlipNav;

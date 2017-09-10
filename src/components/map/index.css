@@ -1,0 +1,19 @@
+.blipAnims-enter {
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.blipAnims-enter.blipAnims-enter-active {
+  opacity: 1.0;
+  transition: all 0.7s;
+}
+
+.blipAnims-leave {
+  opacity: 1.0;
+  transition: all 0.7s;
+}
+
+.blipAnims-leave.blipAnims-leave-active {
+  opacity: 0.0;
+  transition: all 0.7s;
+}

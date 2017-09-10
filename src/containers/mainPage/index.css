@@ -1,0 +1,23 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.handlebar {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.handlebar Button {
+  margin: 5px;
+}

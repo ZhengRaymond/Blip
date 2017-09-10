@@ -1,0 +1,42 @@
+
+.control-form {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  font-size: 14px;
+  padding: 20px;
+  min-height: 300px;
+}
+
+.control-form > h {
+  font-size: 20px;
+}
+
+.control-label {
+
+}
+
+.control-input {
+
+}
+
+.control-button {
+
+}
+
+.control-menu {
+
+}
+
+.control-radio {
+
+}
+
+.control-slider {
+
+}
+
+.control-submit {
+
+}
